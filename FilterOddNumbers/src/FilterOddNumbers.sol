@@ -12,7 +12,7 @@ contract FilterOddNumbers {
 
     function filterOdd(
         uint256[] memory _arr
-    ) public view returns (uint256[] memory) {
+    ) public pure returns (uint256[] memory) {
         uint256 evenCount = 0;
         uint256[] memory evensArray;
 
