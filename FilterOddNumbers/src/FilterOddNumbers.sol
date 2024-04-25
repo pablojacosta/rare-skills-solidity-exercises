@@ -16,7 +16,7 @@ contract FilterOddNumbers {
         uint256 evenCount = 0;
         uint256[] memory evensArray;
 
-        for (uint i = 0; i < _arr.length; i++) {
+        for (uint256 i = 0; i < _arr.length; i++) {
             if (_arr[i] % 2 == 0) {
                 evenCount++;
             }
@@ -25,7 +25,7 @@ contract FilterOddNumbers {
         evensArray = new uint256[](evenCount);
         uint256 index = 0;
 
-        for (uint i = 0; i < _arr.length; i++) {
+        for (uint256 i = 0; i < _arr.length; i++) {
             if (_arr[i] % 2 == 0) {
                 evensArray[index] = _arr[i];
                 index++;
