@@ -8,6 +8,11 @@ contract IsPrime {
     function isPrime(uint256 number) public pure returns (bool) {
         bool result = true;
 
+        if (number == 1) {
+            result = false;
+            return result;
+        }
+
         if (number != 2) {
             for (uint256 i = 2; i < number; i++) {
                 if (number % i == 0) {
